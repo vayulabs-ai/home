@@ -30,7 +30,7 @@
 
 | Field | Content |
 |-------|---------|
-| **Image** | `/assets/project-2.webp` |
+| **Image** | `/assets/yoursizer-app.png` |
 | **Alt** | YourSizer — AI fashion sizing platform |
 | **Title** | YourSizer — AI fit for fashion |
 | **Summary** | An AI sizing assistant for fashion brands — product-page size recommendations, visual fit previews, and personalized guidance that helps shoppers buy with confidence. |

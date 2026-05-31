@@ -31,12 +31,12 @@ type Project = {
 const projects = [
   {
     src: "/assets/enclave-dashboard.png",
-    alt: "Enclave — Sovereign Company Brain",
+    alt: "Enclave Sovereign Company Brain",
     width: 2400,
     height: 1564,
     className: "col-span-14 md:col-span-7 lg:col-span-9",
     imageClassName: "object-center",
-    title: "Enclave — sovereign company brain",
+    title: "Enclave Sovereign Company Brain",
     summary:
       "Sovereign AI for regulated teams: deploys inside your AWS account, connects Slack, Drive, GitHub, Confluence, and Jira, and delivers permission-aware, sourced answers without data leaving your perimeter.",
     client: "Enclave",
@@ -53,16 +53,17 @@ const projects = [
       "Built for regulated companies blocked by SaaS AI compliance — data stays in your AWS VPC with customer-held keys and full audit logs. A deploy-in-weeks path vs. 8–12 month internal builds that die in security review.",
   },
   {
-    src: "/assets/project-2.webp",
-    alt: "YourSizer — AI fashion sizing platform",
-    width: 1248,
-    height: 1320,
+    src: "/assets/yoursizer-app.png",
+    alt: "YourSizer AI fashion fit assistant",
+    width: 966,
+    height: 1024,
     className: "col-span-14 md:col-span-7 lg:col-span-5",
-    title: "YourSizer — AI fit for fashion",
+    imageClassName: "object-center",
+    title: "YourSizer AI fit for fashion",
     summary:
-      "An AI sizing assistant for fashion brands — product-page size recommendations, visual fit previews, and personalized guidance that helps shoppers buy with confidence.",
+      "An AI sizing assistant for fashion brands product-page size recommendations, visual fit previews, and personalized guidance that helps shoppers buy with confidence.",
     client: "YourSizer",
-    category: "AI, Computer Vision, E-commerce",
+    category: "AI, WebGL, Image generation, E-commerce",
     timeline: "10 weeks",
     deliverables: [
       "Marketing site & product positioning",
