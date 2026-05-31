@@ -76,11 +76,12 @@ const projects = [
       "Helps brands reduce size-related returns and lift conversion with body-aware recommendations — not generic size charts. Embeds on product pages in a few lines of code.",
   },
   {
-    src: "/assets/project-3.webp",
-    alt: "Cloud Infrastructure Migration",
-    width: 1824,
-    height: 1320,
+    src: "/assets/allude-dashboard.png",
+    alt: "Allude — AI workspace",
+    width: 1024,
+    height: 682,
     className: "col-span-14 md:col-span-7 lg:col-span-7",
+    imageClassName: "object-center",
     title: "Cloud infra migration & DevOps",
     summary:
       "Migrated a legacy on-premise system to AWS with auto-scaling, CI/CD pipelines, and 99.9% uptime — at 40% lower infra cost.",
@@ -98,11 +99,12 @@ const projects = [
       "Infra cost reduced 40%. Deployment time from 4 hours to 8 minutes. Zero downtime during migration.",
   },
   {
-    src: "/assets/project-4.webp",
-    alt: "Scalable Examination Platform",
-    width: 1824,
-    height: 1320,
+    src: "/assets/agreedpro-dashboard.png",
+    alt: "AgreePro — contract intelligence dashboard",
+    width: 1024,
+    height: 750,
     className: "group relative col-span-14 md:col-span-7 lg:col-span-7",
+    imageClassName: "object-center",
     title: "Online examination platform",
     summary:
       "A cloud-hosted CBT platform handling 50,000+ concurrent candidates with real-time scoring, anti-cheat monitoring, and instant results.",

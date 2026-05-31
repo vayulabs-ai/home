@@ -50,7 +50,7 @@
 
 | Field | Content |
 |-------|---------|
-| **Image** | `/assets/project-3.webp` |
+| **Image** | `/assets/allude-dashboard.png` |
 | **Alt** | Cloud Infrastructure Migration |
 | **Title** | Cloud infra migration & DevOps |
 | **Summary** | Migrated a legacy on-premise system to AWS with auto-scaling, CI/CD pipelines, and 99.9% uptime — at 40% lower infra cost. |
@@ -70,7 +70,7 @@
 
 | Field | Content |
 |-------|---------|
-| **Image** | `/assets/project-4.webp` |
+| **Image** | `/assets/agreedpro-dashboard.png` |
 | **Alt** | Scalable Examination Platform |
 | **Title** | Online examination platform |
 | **Summary** | A cloud-hosted CBT platform handling 50,000+ concurrent candidates with real-time scoring, anti-cheat monitoring, and instant results. |
