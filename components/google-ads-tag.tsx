@@ -1,6 +1,7 @@
 import Script from "next/script";
 
 const GOOGLE_ADS_ID = "AW-16783322537";
+const ADS_CONVERSION_EVENT = "ads_conversion_Purchase_1";
 
 export const GoogleAdsTag = () => {
   return (
@@ -16,6 +17,22 @@ export const GoogleAdsTag = () => {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', '${GOOGLE_ADS_ID}');
+        `}
+      </Script>
+      <Script id="google-ads-conversion-helper" strategy="afterInteractive">
+        {`
+          function gtagSendEvent(url) {
+            var callback = function () {
+              if (typeof url === 'string') {
+                window.location = url;
+              }
+            };
+            gtag('event', '${ADS_CONVERSION_EVENT}', {
+              'event_callback': callback,
+              'event_timeout': 2000,
+            });
+            return false;
+          }
         `}
       </Script>
     </>

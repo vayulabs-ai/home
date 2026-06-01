@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { getCalApi } from "@calcom/embed-react";
 import { CAL_BOOKING_LINK } from "@/lib/cal";
+import { reportAdsConversion } from "@/lib/gtag-conversion";
 
 export const Button = ({
   text = "Chat with team",
@@ -18,10 +19,14 @@ export const Button = ({
 }) => {
   return (
     <button
-      onClick={async () => {
-        const cal = await getCalApi();
-        cal("modal", {
-          calLink: CAL_BOOKING_LINK,
+      onClick={() => {
+        reportAdsConversion(() => {
+          void (async () => {
+            const cal = await getCalApi();
+            cal("modal", {
+              calLink: CAL_BOOKING_LINK,
+            });
+          })();
         });
       }}
       className={cn(
