@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Inter, DM_Mono } from "next/font/google";
 import { Navbar } from "@/components/navbar";
+import { Analytics } from "@vercel/analytics/next"
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
@@ -37,6 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics />
       <body
         className={cn(
           inter.variable,
@@ -49,6 +51,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      <Analytics />
     </html>
   );
 }
