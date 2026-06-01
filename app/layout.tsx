@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Inter, DM_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import { Navbar } from "@/components/navbar";
-import { Analytics } from "@vercel/analytics/next"
+import { GoogleAdsTag } from "@/components/google-ads-tag";
 import { cn } from "@/lib/utils";
 
 import "./globals.css";
@@ -38,7 +39,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Analytics />
+      <head>
+        <GoogleAdsTag />
+      </head>
       <body
         className={cn(
           inter.variable,
@@ -47,11 +50,11 @@ export default function RootLayout({
           `bg-background relative font-sans antialiased`,
         )}
       >
+        <Analytics />
         <Navbar />
         {children}
         <Footer />
       </body>
-      <Analytics />
     </html>
   );
-}
+};
