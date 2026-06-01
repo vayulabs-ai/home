@@ -11,21 +11,21 @@ import { Adobe, GoogleLogo, Microsoft, Raycast } from "@/components/icons/logo";
 const data = [
   {
     quote:
-      "Working with Manu and his team was a masterclass in design engineering. They did not just create a website they built a high-performance, thoughtfully engineered product.",
+      "Working with shashank and his team was a masterclass in design engineering. They did not just create a website they built a high-performance, thoughtfully engineered product.",
     name: "Jack Hudson",
     role: "VP of Engineering, Cal.com",
     logo: "/logos/cal.webp",
   },
   {
     quote:
-      "Manu's team rapidly iterated with our stakeholders and delivered a thoughtful, usable product that exceeded expectations.",
+      "shashank's team rapidly iterated with our stakeholders and delivered a thoughtful, usable product that exceeded expectations.",
     name: "Priya Singh",
     role: "Product Manager, Google",
     logo: <GoogleLogo className="h-10 w-auto" />,
   },
   {
     quote:
-      "The collaboration and clarity from Manu's team made a significant impact on our roadmap.",
+      "The collaboration and clarity from shashank's team made a significant impact on our roadmap.",
     name: "Liam O'Connor",
     role: "Head of Design, Raycast",
     logo: <Raycast className="h-10 w-auto" />,

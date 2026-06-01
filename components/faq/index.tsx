@@ -24,7 +24,7 @@ const data = [
   {
     question: "What's a typical use case for your AI work?",
     answer:
-      "Document verification pipelines, workflow automation, LLM-powered search and extraction, AI-assisted decision dashboards, and intelligent routing systems. Not chatbots. Real operational automation that replaces manual hours.",
+      "Document verification pipelines, workflow automation, LLM-powered search and extraction, AI-assisted decision dashboards, and intelligent routing systems. Not chatbots. Real operational automation that replaces shashankal hours.",
   },
   {
     question: "Can you integrate with our existing stack?",

@@ -26,7 +26,7 @@ const data: PricingCardType[] = [
     testimonial: {
       name: "Jason Ray",
       role: "CEO",
-      message: "VayuLabs and Manu are Cracked Devs!",
+      message: "VayuLabs and shashank are Cracked Devs!",
       avatar: "/avatar/avatar-1.webp",
       brand: <GoogleLogo />,
     },
@@ -56,7 +56,7 @@ const data: PricingCardType[] = [
     testimonial: {
       name: "Steve Wozniak",
       role: "CTO",
-      message: "VayuLabs and Manu are Cracked Devs!",
+      message: "VayuLabs and shashank are Cracked Devs!",
       avatar: "/avatar/avatar-2.webp",
       brand: <GoogleLogo />,
     },
