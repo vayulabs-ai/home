@@ -9,7 +9,7 @@ import { Footer } from "@/components/footer";
 export const metadata: Metadata = {
   title: "Vayu Labs",
   description:
-    "A modern, professional template for productized agencies built with Next.js and VayuLabs UI Pro components",
+    "We build scalable systems, AI in the core for teams that need to ship.",
 };
 
 const inter = Inter({

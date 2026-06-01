@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const siteConfig = {
   name: "Vayu Labs",
   description:
-    "We design and build websites that drive results and help your business grow. No Calls. No BS. Just Results.",
+    "We build scalable systems, AI in the core for teams that need to ship.",
   // Override in production via NEXT_PUBLIC_SITE_URL.
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://vayulabs.in",
   ogImage: "/ace.webp",

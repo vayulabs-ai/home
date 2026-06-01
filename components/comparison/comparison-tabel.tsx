@@ -27,7 +27,7 @@ export const ComparisonTabel = ({ cards }: { cards: ComparisonData[] }) => {
         <div data-slot="tabel-cell">
           <Logo className="h-5 w-auto scale-125" />
           <span className="-tracking-sm text-lg leading-4.5 font-medium">
-            VayuLabs Labs
+            VayuLabs
           </span>
         </div>
         <div data-slot="tabel-cell">
@@ -84,7 +84,7 @@ export const ComparisonTabel = ({ cards }: { cards: ComparisonData[] }) => {
           </span>
         </div>
         <div data-slot="tabel-cell">
-          <Button text="Book a Free Call" />
+          <Button text="Chat with team" />
         </div>
         <div data-slot="tabel-cell">
           <Button

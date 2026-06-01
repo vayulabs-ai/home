@@ -8,11 +8,11 @@ export const Metrics = () => {
   const [value, setValue] = useState(1);
 
   useEffect(() => {
-    if (value === 100) return;
+    if (value === 3) return;
 
     const interval = setInterval(() => {
       setValue((prev) => prev + 1);
-    }, 10);
+    }, 120);
     return () => clearInterval(interval);
   }, [value]);
 
@@ -22,20 +22,22 @@ export const Metrics = () => {
         <RoundedGridPattern />
       </div>
       <div className="z-10 flex flex-col gap-3">
-        <span className="-tracking-xl flex text-[6.25rem] leading-25 font-medium">
-          <SlidingNumber value={value} />+
+        <span className="-tracking-xl flex items-baseline text-[5rem] leading-20 font-medium sm:text-[6.25rem] sm:leading-25">
+          <span className="text-natural-black">$</span>
+          <SlidingNumber value={value} />
+          <span className="text-natural-black">M+</span>
         </span>
         <span className="text-muted-foreground -tracking-xs text-lg leading-6.5 font-medium">
-          Companies served
+          USD worth of projects delivered
         </span>
       </div>
       <div className="z-10">
-        <span className="-tracking-xs text-muted-foreground text-base leading-6">
-          We design and build websites that drive results and help your business
-          grow. No Calls. No BS. Just Results.
-        </span>
+        <p className="-tracking-xs text-muted-foreground text-base leading-6">
+          VayuLabs designs and builds production-ready web apps, dashboards, and
+          AI products for founders. Design, engineering, and delivery in one
+          team.
+        </p>
       </div>
     </div>
   );
 };
-

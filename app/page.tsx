@@ -4,10 +4,10 @@ import { BentoOne } from "@/components/bento-one";
 import { BentoTwo } from "@/components/bento-two";
 import { Comparison } from "@/components/comparison";
 import { FAQ } from "@/components/faq";
-import { Feedbacks } from "@/components/feedbacks";
+// import { Feedbacks } from "@/components/feedbacks";
 import { Hero } from "@/components/hero";
 import { LogoCloud } from "@/components/logo-cloud";
-import { Pricing } from "@/components/pricing";
+// import { Pricing } from "@/components/pricing";
 import { Projects } from "@/components/projects";
 import { Testimonials } from "@/components/testimonials";
 
@@ -26,9 +26,9 @@ export default function Home() {
       <Testimonials />
       <BentoTwo />
       <Comparison />
-      <Pricing />
+      {/* <Pricing /> */}
       <AboutSection />
-      <Feedbacks />
+      {/* <Feedbacks /> */}
       <FAQ />
     </section>
   );

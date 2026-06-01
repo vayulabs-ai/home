@@ -2,10 +2,14 @@ import { Container } from "@/components/container";
 import { BlogCard } from "@/components/resources/blog-card";
 import { blog } from "@/lib/source";
 
-export const SuggestedBlogs = () => {
+export const SuggestedBlogs = ({ currentSlug }: { currentSlug?: string }) => {
   const posts = blog
     .getPages()
-    .toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, 3);
+    .filter((post) => post.slugs[0] !== currentSlug)
+    .toSorted((a, b) => b.data.date.getTime() - a.data.date.getTime())
+    .slice(0, 3);
+
+  if (posts.length === 0) return null;
 
   return (
     <section className="w-full">
@@ -26,4 +30,3 @@ export const SuggestedBlogs = () => {
     </section>
   );
 };
-

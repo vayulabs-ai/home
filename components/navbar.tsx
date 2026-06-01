@@ -12,7 +12,7 @@ import Link from "next/link";
 const navItems = [
   { label: "Work", href: "/work" },
   { label: "Products", href: "/products" },
-  { label: "Pricing", href: "/pricing" },
+  // { label: "Pricing", href: "/pricing" },
   { label: "Blog", href: "/blog" },
 ];
 

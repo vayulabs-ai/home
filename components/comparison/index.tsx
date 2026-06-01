@@ -21,19 +21,19 @@ const cardsData: InfoCardsProps[] = [
   {
     title: "Instant Onboarding",
     description:
-      "Skip Hiring Delays and Start seeing results faster than ever before with our expert team",
+      "Kick off in days, not months. We plug into your stack and roadmap without a long hiring cycle.",
     icon: <DoorsOpenIcon />,
   },
   {
     title: "High Impact, Low Overhead",
     description:
-      "Skip Hiring Delays and Start seeing results faster than ever before with our expert team",
+      "Senior design and engineering without agency bloat. One team, clear scope, faster shipping.",
     icon: <DocsIcon />,
   },
   {
-    title: "Stress-Free Collaboartion",
+    title: "Stress-Free Collaboration",
     description:
-      "Skip Hiring Delays and Start seeing results faster than ever before with our expert team",
+      "Transparent process, async-friendly updates, and a partner who owns delivery end to end.",
     icon: <HandsIcon />,
   },
 ];
@@ -53,26 +53,26 @@ const comparisonData: ComparisonData[] = [
   },
   {
     title: "Design Philosophy",
-    VayuLabs: "Modern, minimal, and purposeful.",
+    VayuLabs: "Modern, minimal, and purposeful",
     traditional: "Trend-based and cluttered",
     icon: <NodeLines />,
   },
   {
     title: "Development Stack",
-    VayuLabs: "Built with modern frameworks",
+    VayuLabs: "Next.js, React, and modern AI tooling",
     traditional: "Outdated stacks",
     icon: <CubeIcon />,
   },
   {
     title: "Communication",
-    VayuLabs: "Clear updates",
-    traditional: "Multiple middlemen",
+    VayuLabs: "Clear async updates, no middlemen",
+    traditional: "Multiple layers and account managers",
     icon: <MessageIcon />,
   },
   {
     title: "Deliverables",
-    VayuLabs: "Production-ready design systems",
-    traditional: "Static mockups",
+    VayuLabs: "Shipped products and production-ready UI",
+    traditional: "Static mockups and slide decks",
     icon: <MessageSend />,
   },
   {
@@ -90,7 +90,7 @@ export const Comparison = () => {
         <div className="flex flex-col gap-6">
           <Header>VayuLabs VS Traditional Service Providers</Header>
           <div className="block lg:hidden">
-            <Button text="Book a Free Call" />
+            <Button text="Chat with team" />
           </div>
         </div>
         <div className="flex flex-col gap-6">

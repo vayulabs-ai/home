@@ -20,53 +20,54 @@ export interface Testimonial {
 const data: Testimonial[] = [
   {
     author: {
-      name: "Henrik Söderlund",
-      title: "CTO at Creme Digital",
-      avatar: "/avatar/henrik.webp",
+      name: "Kerem",
+      title: "Co-founder, YourSizer",
+      avatar: "/avatar/avatar-3.webp",
     },
     quote:
-      "Excellent communication and professionalism: open to ideas, humble when views differ. We'll re-engage; can't wait for the next job together.",
-    brand: "/logos/1.webp",
+      "Working with Shashank has been a real privilege. He's careful, deep-thinking, reliable under pressure, and always builds things the right way. His communication and positive energy made the journey genuinely enjoyable.",
+    brand: "/logos/clients/your-sizer.svg",
   },
   {
     author: {
-      name: "Asriel Han",
-      title: "Founder / CTO at Advex AI",
-      avatar: "/avatar/asriel.webp",
-    },
-    quote:
-      "Quick to respond, very professional, and shipped a site within a week. Looking forward to the next collaboration.",
-    brand: "/logos/7.webp",
-  },
-  {
-    author: {
-      name: "John Shahawy",
-      title: "Founder at Moonbeam",
-      avatar: "/avatar/john.webp",
-    },
-    quote:
-      "The best front-end developer I've worked with. He took the requirements and ran with them. We're delighted with the product.",
-    brand: "/logos/9.webp",
-  },
-  {
-    author: {
-      name: "Sarah Johnson",
-      title: "Product Manager at TechCorp",
-      avatar: "/avatar/avatar-1.webp",
-    },
-    quote:
-      "Exceptional attention to detail and a collaborative approach. Sarah delivered beyond our expectations.",
-    brand: "/logos/10.webp",
-  },
-  {
-    author: {
-      name: "Michael Brown",
-      title: "Lead Developer at CodeCraft",
+      name: "Arif",
+      title: "Co-founder, YourSizer",
       avatar: "/avatar/avatar-2.webp",
     },
     quote:
-      "Incredible problem-solving skills and a great team player. Michael consistently delivers high-quality code on time.",
-    brand: "/logos/11.webp",
+      "It's hard to see him go, but we respect his decision and appreciate how smooth the transition has been. Thank you for the late nights and belief you put into YourSizer. He's left a strong impact and will always be part of our story.",
+    brand: "/logos/clients/your-sizer.svg",
+  },
+  {
+    author: {
+      name: "Srinidhi Ranganath",
+      title: "CEO, Citron AI",
+      avatar:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    quote:
+      "Shashank brings strong work ethic, professionalism, and dependability to every task. During Zoho testing, he went above and beyond. His dedication and responsiveness were key to a smooth, successful integration.",
+    brand: "/logos/clients/pro.png",
+  },
+  {
+    author: {
+      name: "Arun Venkatraman",
+      title: "CTO, AgreedPro",
+      avatar: "/avatar/avatar-4.webp",
+    },
+    quote:
+      "Shashank is polite, dependable, and puts in the effort to get things done right. As he grows, a sharper business lens and LLM workflow optimization mindset will further align his work with product goals and partner impact.",
+    brand: "/logos/clients/pro.png",
+  },
+  {
+    author: {
+      name: "Manthan Gupta",
+      title: "Co-founder, Pillow Connect",
+      avatar: "/avatar/jonathan.webp",
+    },
+    quote:
+      "I hired Shashank to build our hiring platform MVP. He nailed it with creative touches, strong execution, and a great customer experience. His multitasking and cross-domain knowledge are rare. I'd put his work in the top 10% of talent because of his experience and expertise.",
+    brand: "/logos/clients/pillow-connect.png",
   },
 ];
 
@@ -116,7 +117,7 @@ export const Testimonials = () => {
           <Header className="text-center md:text-left">
             See Insights straight from our users
           </Header>
-          <Button text="Chat with us" />
+          <Button text="Chat with team" />
         </div>
         <div className="flex flex-col gap-10">
           <div className="_overflow-hidden">

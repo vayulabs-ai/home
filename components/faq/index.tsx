@@ -12,44 +12,44 @@ import Link from "next/link";
 
 const data = [
   {
-    question: "What exactly does this platform do?",
+    question: "What does VayuLabs actually do?",
     answer:
-      "Our platform lets you design, deploy, and manage AI-powered agentic workflows that can combine both automated (AI) and manual steps. These workflows connect to your existing tools (like Slack, Notion, or Google Sheets) and use AI agents to complete tasks.",
+      "We build custom software, AI agents, cloud infrastructure, and government portals. From architecture to deployment to long-term maintenance, we handle the full lifecycle. Think of us as your external engineering team that ships.",
   },
   {
-    question: "Do I need to be technical to use this tool?",
+    question: "Do you work with government clients?",
     answer:
-      "Our platform lets you design, deploy, and manage AI-powered agentic workflows that can combine both automated (AI) and manual steps. These workflows connect to your existing tools (like Slack, Notion, or Google Sheets) and use AI agents to complete tasks.",
+      "Yes. We are building toward government work and are currently in the registration process for Bihar, MSME certification, and GeM listing. We do not claim credentials we have not completed yet. If you have a public-sector requirement, reach out and we can discuss timelines, compliance, and how we can support your procurement process.",
   },
   {
-    question: "What’s a typical use case of an AI agentic workflow?",
+    question: "What's a typical use case for your AI work?",
     answer:
-      "Our platform lets you design, deploy, and manage AI-powered agentic workflows that can combine both automated (AI) and manual steps. These workflows connect to your existing tools (like Slack, Notion, or Google Sheets) and use AI agents to complete tasks.",
+      "Document verification pipelines, workflow automation, LLM-powered search and extraction, AI-assisted decision dashboards, and intelligent routing systems. Not chatbots. Real operational automation that replaces manual hours.",
   },
   {
-    question: "Can I connect this with my existing stack?",
+    question: "Can you integrate with our existing stack?",
     answer:
-      "Our platform lets you design, deploy, and manage AI-powered agentic workflows that can combine both automated (AI) and manual steps. These workflows connect to your existing tools (like Slack, Notion, or Google Sheets) and use AI agents to complete tasks.",
+      "Yes. We work with React, Next.js, Python, FastAPI, Node.js, AWS, Azure, PostgreSQL, MongoDB, and most modern stacks. If you have a legacy system, we can migrate incrementally without breaking production.",
   },
   {
-    question: "How does AI model selection work?",
+    question: "How fast can you start?",
     answer:
-      "Our platform lets you design, deploy, and manage AI-powered agentic workflows that can combine both automated (AI) and manual steps. These workflows connect to your existing tools (like Slack, Notion, or Google Sheets) and use AI agents to complete tasks.",
+      "Most projects kick off within 1 week of agreement. We run 2-week sprints with live demos at each cycle. You get a dedicated project dashboard. No waiting for weekly email updates.",
   },
   {
-    question: "Can I connect this with my existing stack?",
+    question: "What's your typical project size?",
     answer:
-      "Our platform lets you design, deploy, and manage AI-powered agentic workflows that can combine both automated (AI) and manual steps. These workflows connect to your existing tools (like Slack, Notion, or Google Sheets) and use AI agents to complete tasks.",
+      "We work across scopes, from focused quick builds to full-platform deliveries. Government contracts, startup MVPs, and enterprise integrations. No project too small to start, no system too complex to scale.",
   },
   {
-    question: "Do I need to be technical to use this tool?",
+    question: "Do you offer maintenance after delivery?",
     answer:
-      "Our platform lets you design, deploy, and manage AI-powered agentic workflows that can combine both automated (AI) and manual steps. These workflows connect to your existing tools (like Slack, Notion, or Google Sheets) and use AI agents to complete tasks.",
+      "Yes. Every project includes free post-delivery maintenance for up to 4 to 5 weeks after handoff. After that window, ongoing support, fixes, and monitoring are chargeable. We can scope a paid maintenance plan if you need longer coverage.",
   },
   {
-    question: "How does AI model selection work?",
+    question: "Where is VayuLabs based?",
     answer:
-      "Our platform lets you design, deploy, and manage AI-powered agentic workflows that can combine both automated (AI) and manual steps. These workflows connect to your existing tools (like Slack, Notion, or Google Sheets) and use AI agents to complete tasks.",
+      "We are currently in the process of formal registration and setting up operations, with Patna, Bihar and Hyderabad, Telangana as our planned bases. We work remotely with clients across India and internationally today. In-person meetings can be arranged for kick-offs and client workshops as needed.",
   },
 ];
 
@@ -63,17 +63,17 @@ export const FAQ = () => {
             <div className="-tracking-xs text-base leading-6 font-medium md:text-nowrap">
               Have more doubts? Reach out to us at{" "}
               <Link
-                href="mailto:shashank@vayulabs.in"
+                href="mailto:hello@vayulabs.in"
                 className="text-dusty-green underline underline-offset-3"
               >
-                shashank@vayulabs.in
+                hello@vayulabs.in
               </Link>
             </div>
           </div>
           <CTACard />
         </div>
         <div className="h-full w-full">
-          <Accordion defaultValue={["item-1"]}>
+          <Accordion defaultValue={[`${data[0].question}-0`]}>
             {data.map((item, index) => (
               <React.Fragment key={`${item.question}-${index}`}>
                 <AccordionItem
@@ -96,4 +96,3 @@ export const FAQ = () => {
     </section>
   );
 };
-

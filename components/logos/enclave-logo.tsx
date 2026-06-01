@@ -8,12 +8,12 @@ export const EnclaveLogo = ({ className }: EnclaveLogoProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1160"
+      width="640"
       height="192"
-      viewBox="0 0 1160 192"
+      viewBox="14 28 626 148"
       role="img"
       aria-label="Enclave"
-      className={cn("h-[30px] w-auto sm:h-[34px]", className)}
+      className={cn("h-[30px] w-auto shrink-0 sm:h-[34px]", className)}
     >
       <polygon points="54,36 118,36 93,67 29,67" fill="#676769" />
       <polygon points="54,84 158,84 133,115 29,115" fill="#363638" />

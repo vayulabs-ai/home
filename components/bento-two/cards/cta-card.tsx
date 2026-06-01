@@ -33,7 +33,7 @@ const patten: CtaCardPatten[] = [
   },
   {
     type: "image",
-    image: "/avatar/avatar-1.webp",
+    image: "/alex.png",
   },
   {
     type: "depth",
@@ -130,7 +130,7 @@ export const CtaCard = () => {
 
       <div className="flex flex-col gap-5">
         <span className="-tracking-xs text-lg leading-6 font-medium">
-          Get to know our dream team
+          Meet the team behind VayuLabs
         </span>
         <div>
           <Button text="Chat with team" />

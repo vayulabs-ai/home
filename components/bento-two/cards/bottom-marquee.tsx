@@ -44,7 +44,7 @@ export const BottomMarquee = () => {
   return (
     <div className="relative flex h-full items-center px-8">
       <div className="-tracking-xs text-lg leading-6.5 font-medium text-nowrap">
-        Technologies we use
+        Stack we ship with
       </div>
       <Marquee className="flex h-full max-h-22 items-center">
         <MarqueeFade side="left" className="from-natural-white" />

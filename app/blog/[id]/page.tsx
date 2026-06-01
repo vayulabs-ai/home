@@ -45,7 +45,7 @@ export default async function BlogPostPage({
       <BlogHeader page={page} />
       <BlogCtaSection />
       <Content page={page} />
-      <SuggestedBlogs />
+      <SuggestedBlogs currentSlug={id} />
     </section>
   );
 }

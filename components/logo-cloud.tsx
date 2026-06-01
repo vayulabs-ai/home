@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Container } from "@/components/container";
 import { BeaconLogo } from "@/components/logos/beacon-logo";
 import { EnclaveLogo } from "@/components/logos/enclave-logo";
+import { AlludeLogo } from "@/components/logos/allude-logo";
 import { PillowConnectLogo } from "@/components/logos/pillow-connect-logo";
 import { YourSizerLogo } from "@/components/logos/your-sizer-logo";
 import { cn } from "@/lib/utils";
@@ -22,9 +23,7 @@ const clientLogos = [
   {
     id: "allude",
     name: "Allude",
-    src: "/logos/clients/allude.png",
-    width: 200,
-    height: 200,
+    element: <AlludeLogo />,
   },
   {
     id: "pro",
@@ -52,14 +51,11 @@ export const LogoCloud = () => {
         Trusted by fast-growing startups
       </h2>
 
-      <div className="mx-auto mt-12 flex max-w-6xl flex-wrap items-center justify-center gap-x-8 gap-y-10 md:gap-x-12 md:gap-y-12">
+      <div className="mx-auto mt-12 flex w-full max-w-6xl flex-wrap items-center justify-center gap-x-10 gap-y-10 px-2 sm:gap-x-12 lg:flex-nowrap lg:justify-between lg:gap-x-0 lg:px-6">
         {clientLogos.map((logo) => (
           <div
             key={logo.id}
-            className={cn(
-              "group flex h-10 items-center justify-center transition-all duration-300 hover:scale-105",
-              logo.id === "allude" && "h-8 md:h-10",
-            )}
+            className="group flex h-10 shrink-0 items-center justify-center px-1 transition-all duration-300 hover:scale-105"
           >
             {"element" in logo ? (
               logo.element

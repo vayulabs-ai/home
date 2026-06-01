@@ -27,7 +27,7 @@ export const Testimonial = ({
           : "border-natural-white/10",
       )}
     >
-      <div className="flex w-full items-center justify-between">
+      <div className="flex w-full items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <Image
             src={avatar}
@@ -42,7 +42,9 @@ export const Testimonial = ({
             {role}
           </span>
         </div>
-        <div className="size-5.5">{brand}</div>
+        <div className="flex size-5.5 shrink-0 items-center justify-center overflow-hidden">
+          {brand}
+        </div>
       </div>
       <div className="-tracking-xs text-sm leading-5 font-medium">
         {message}

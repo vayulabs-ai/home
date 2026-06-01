@@ -11,32 +11,34 @@ import { Adobe, GoogleLogo, Microsoft, Raycast } from "@/components/icons/logo";
 const data = [
   {
     quote:
-      "“Working with Manu and his team was a masterclass in design engineering. They didn’t just create a website they built a high-performance, thoughtfully engineered product.”",
+      "Working with Manu and his team was a masterclass in design engineering. They did not just create a website they built a high-performance, thoughtfully engineered product.",
     name: "Jack Hudson",
     role: "VP of Engineering, Cal.com",
     logo: "/logos/cal.webp",
   },
   {
     quote:
-      "“Manu's team rapidly iterated with our stakeholders and delivered a thoughtful, usable product that exceeded expectations.”",
+      "Manu's team rapidly iterated with our stakeholders and delivered a thoughtful, usable product that exceeded expectations.",
     name: "Priya Singh",
     role: "Product Manager, Google",
     logo: <GoogleLogo className="h-10 w-auto" />,
   },
   {
-    quote: "“The collaboration and clarity from Manu's team made a significant impact on our roadmap.”",
+    quote:
+      "The collaboration and clarity from Manu's team made a significant impact on our roadmap.",
     name: "Liam O'Connor",
     role: "Head of Design, Raycast",
     logo: <Raycast className="h-10 w-auto" />,
   },
   {
-    quote: "“Technical excellence paired with strong product sense — highly recommended.”",
+    quote:
+      "Technical excellence paired with strong product sense. Highly recommended.",
     name: "Sara Williams",
     role: "Engineering Manager, Microsoft",
     logo: <Microsoft className="h-10 w-auto" />,
   },
   {
-    quote: "“They helped us scale design systems and ship faster across teams.”",
+    quote: "They helped us scale design systems and ship faster across teams.",
     name: "Carlos Mendez",
     role: "Design Systems Lead, Adobe",
     logo: <Adobe className="h-10 w-auto" />,
@@ -88,7 +90,7 @@ export const Feedbacks = () => {
         <div className="flex flex-col gap-6 md:flex-row md:justify-between">
           <Header>What people have been saying</Header>
           <div>
-            <Button text="Chat with us" />
+            <Button text="Chat with team" />
           </div>
         </div>
         <div className="flex flex-col gap-10">

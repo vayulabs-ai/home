@@ -7,7 +7,7 @@ import { BlogCard } from "@/components/resources/blog-card";
 export const metadata = getSEO({
   title: "Blog",
   description:
-    "Insights, guides, and lessons on design, development, and building modern web experiences.",
+    "Notes from VayuLabs on shipping production AI, full-stack products, and cloud delivery.",
   path: "/blog",
 });
 
@@ -19,8 +19,14 @@ export default function BlogIndexPage() {
   return (
     <section className="w-full">
       <Container className="flex flex-col gap-10 pt-30 pb-20">
-        <Header>Blog</Header>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-col gap-4">
+          <Header>Blog</Header>
+          <p className="text-muted-foreground -tracking-xs max-w-2xl text-base leading-6 font-medium">
+            Notes on shipping AI, platforms, and infrastructure from the
+            VayuLabs team.
+          </p>
+        </div>
+        <div className="mx-auto grid w-full max-w-md grid-cols-1 gap-8">
           {posts.map((post) => (
             <BlogCard
               key={post.url}

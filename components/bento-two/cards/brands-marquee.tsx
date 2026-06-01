@@ -1,4 +1,5 @@
-import { Adobe, GoogleLogo, Microsoft, Raycast } from "@/components/icons/logo";
+import { BeaconLogo } from "@/components/logos/beacon-logo";
+import { EnclaveLogo } from "@/components/logos/enclave-logo";
 import {
   Marquee,
   MarqueeContent,
@@ -6,24 +7,32 @@ import {
   MarqueeItem,
 } from "@/components/kibo-ui/marquee";
 
-const data = [
+const clients = [
   {
-    name: "Microsoft",
-    logo: <Microsoft />,
+    name: "Enclave",
+    logo: <EnclaveLogo className="h-5 w-auto sm:h-6" />,
   },
   {
-    name: "Google",
-    logo: <GoogleLogo />,
+    name: "YourSizer",
+    src: "/logos/clients/your-sizer.svg",
   },
   {
-    name: "Adobe",
-    logo: <Adobe />,
+    name: "Allude",
+    src: "/logos/clients/allude.png",
   },
   {
-    name: "Raycast",
-    logo: <Raycast />,
+    name: "AgreedPro",
+    src: "/logos/clients/pro.png",
   },
-];
+  {
+    name: "Pillow Connect",
+    src: "/logos/clients/pillow-connect.png",
+  },
+  {
+    name: "Beacon",
+    logo: <BeaconLogo className="h-6 w-auto" />,
+  },
+] as const;
 
 export const BrandsMarquee = () => {
   return (
@@ -32,17 +41,21 @@ export const BrandsMarquee = () => {
         <MarqueeFade side="left" className="from-natural-white" />
         <MarqueeFade side="right" className="from-natural-white" />
         <MarqueeContent direction="right" className="h-full">
-          {data.map((brand, index) => (
+          {clients.map((client) => (
             <MarqueeItem
-              className="shadow-card-md flex items-center gap-2.5 rounded-lg px-2.5 py-1.75"
-              key={index}
+              className="shadow-card-md flex h-12 min-w-[120px] items-center justify-center rounded-lg px-4 py-2"
+              key={client.name}
             >
-              <div className="size-4">
-                {brand.logo}
-              </div>
-              <span className="-tracking-xs text-sm leading-3.5 font-medium">
-                {brand.name}
-              </span>
+              {"src" in client ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={client.src}
+                  alt={client.name}
+                  className="h-6 w-auto max-w-[120px] object-contain"
+                />
+              ) : (
+                client.logo
+              )}
             </MarqueeItem>
           ))}
         </MarqueeContent>
@@ -50,4 +63,3 @@ export const BrandsMarquee = () => {
     </div>
   );
 };
-

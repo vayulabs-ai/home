@@ -1,33 +1,37 @@
 import { Container } from "@/components/container";
 import { Header } from "@/components/header";
 import { HoverCard, CardItem } from "@/components/products/hover-card";
+import { EnclaveLogo } from "@/components/logos/enclave-logo";
 
 const data: CardItem[] = [
   {
-    logo: "/ace.webp",
-    name: "Acebuilder",
-    description:
-      "Natural-language interface where you describe your app, features, user flows.",
-    badge: "New Launch",
-    image: "/assets/project-1.webp",
+    logo: "/assets/trace-logo.png",
+    name: "trace",
+    description: "Find patterns. Live better.",
+    badge: "Coming Soon",
+    image: "/assets/trace-poster.png",
+    imageClassName:
+      "absolute inset-0 h-full w-full object-cover object-left-top",
     feature: [
-      "Prompt-to-app generator",
-      "Architecture suggestion & setup",
-      "Code generation engine",
-      "Live preview & sandbox",
+      "Voice-first health tracking",
+      "Personal health intelligence engine",
+      "Daily actionable insights",
+      "Doctor-ready health summaries",
+      "Private, on-device by default",
     ],
   },
   {
-    logo: "/logo.webp",
-    name: "VayuLabs UI",
+    logoElement: <EnclaveLogo className="h-7 w-auto sm:h-8" />,
+    name: "Enclave",
     description:
-      "Natural-language interface where you describe your app, features, user flows.",
-    image: "/assets/project-5.webp",
+      "Sovereign AI for regulated teams. Permission-aware answers inside your AWS perimeter.",
+    image: "/assets/enclave-dashboard.png",
+    imageClassName: "absolute inset-0 h-full w-full object-cover object-top",
     feature: [
-      "Prompt-to-app generator",
-      "Architecture suggestion & setup",
-      "Code generation engine",
-      "Live preview & sandbox",
+      "Deploys inside your AWS VPC",
+      "Slack, Drive, GitHub, Confluence, Jira",
+      "Permission-aware search and Q&A",
+      "Customer-held keys and full audit logs",
     ],
   },
 ];
@@ -46,4 +50,3 @@ export const Products = () => {
     </section>
   );
 };
-

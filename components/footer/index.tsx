@@ -44,6 +44,8 @@ const data = {
 };
 
 export const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-natural-black relative overflow-hidden">
       <div className="absolute inset-0 -left-128.75">
@@ -62,7 +64,7 @@ export const Footer = () => {
           </div>
           <div className="absolute inset-0 flex h-fit w-full flex-col items-start justify-between px-6 pt-10 md:flex-row md:px-15 md:pt-16">
             <div className="text-natural-white -tracking-lg w-full max-w-135 justify-center text-[32px] font-medium md:text-5xl md:leading-14 lg:text-[56px] lg:leading-16">
-              Make Your Website a Sales Machine
+              Systems that scale. AI in the core.
             </div>
             <div className="inline-flex w-16 flex-col items-start justify-start gap-2.5 py-6">
               <Link
@@ -79,7 +81,8 @@ export const Footer = () => {
             <div className="flex flex-col gap-4">
               <Logo />
               <span className="text-muted-foreground text-sm leading-5">
-                We design and build websites that drive results
+                We build scalable systems, AI applications, and cloud
+                infrastructure for teams that need to ship.
               </span>
               <div>
                 <Button text="Get started" />
@@ -112,7 +115,7 @@ export const Footer = () => {
               <span className="flex items-center gap-1">
                 <CopyRightIcon />
                 <span className="text-muted-foreground text-xs leading-5 font-medium">
-                  2025 VayuLabs Labs - All Rights Reserved
+                  {year} VayuLabs - All Rights Reserved
                 </span>
               </span>
             </div>

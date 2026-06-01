@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { GridPattenDepth } from "@/components/bento-two/cards/grid-patten-depth";
 
 export const Quotes = () => {
@@ -10,25 +9,25 @@ export const Quotes = () => {
         </div>
       </div>
       <div className="z-10">
-        <Image
-          src={"/logos/1.webp"}
-          alt="Primer Logo"
-          width={100}
-          height={100}
-          className="w-20"
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/logos/clients/pro.png"
+          alt="Citron AI"
+          className="h-8 w-auto max-w-[160px] object-contain object-left"
         />
       </div>
       <div className="-tracking-xs text-muted-foreground z-10 text-base leading-6 font-medium">
-        “Since adding the AI assistant to our store, our support load has
-        dropped by nearly 60% Customers now get instant answers about
-        supplements, dosages.”
+        &ldquo;Shashank brings strong work ethic, professionalism, and
+        dependability to every task. During Zoho testing, he went above and
+        beyond. His dedication and responsiveness were key to a smooth,
+        successful integration.&rdquo;
       </div>
-      <div className="flex items-center gap-2 z-10">
+      <div className="z-10 flex items-center gap-2">
         <span className="-tracking-xs text-base leading-6 font-medium">
-          — James Finley
+          Srinidhi Ranganath
         </span>
         <span className="-tracking-xs text-muted-foreground text-base leading-6 font-medium">
-          Founder, Primer
+          CEO, Citron AI
         </span>
       </div>
     </div>

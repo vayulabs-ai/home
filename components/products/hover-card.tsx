@@ -4,12 +4,16 @@ import Image from "next/image";
 import { motion } from "motion/react";
 
 export interface CardItem {
-  logo: string;
+  logo?: string;
+  logoElement?: React.ReactNode;
   name: string;
   description: string;
   badge?: string;
   image: string;
   feature: string[];
+  /** Optional product visual shown on the left over the background */
+  promoImage?: string;
+  imageClassName?: string;
 }
 
 // const HoverCard = ({ item }: { item: CardItem }) => {
@@ -73,8 +77,25 @@ export const HoverCard = ({ item }: { item: CardItem }) => {
         src={`${item.image}`}
         alt={item.name}
         fill
-        className="absolute inset-0 h-full w-full object-cover"
+        className={
+          item.imageClassName ??
+          "absolute inset-0 h-full w-full object-cover"
+        }
       />
+
+      {item.promoImage && (
+        <div className="pointer-events-none absolute inset-x-6 top-16 bottom-36 z-[5] flex items-center justify-start">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={item.promoImage}
+            alt=""
+            className="max-h-full w-auto max-w-[58%] object-contain object-left drop-shadow-lg"
+            onError={(e) => {
+              e.currentTarget.style.display = "none";
+            }}
+          />
+        </div>
+      )}
 
       {item.badge && (
         <div className="bg-natural-black text-natural-white absolute top-6 left-6 z-10 rounded-full px-3 py-2 text-sm font-medium">
@@ -88,19 +109,23 @@ export const HoverCard = ({ item }: { item: CardItem }) => {
       >
         <div className="flex flex-col gap-2.5">
           <div className="flex items-center gap-2.5">
-            <Image
-              src={`${item.logo}`}
-              alt={item.name}
-              height={32}
-              width={32}
-              className="size-8"
-            />
+            {item.logoElement ? (
+              <div className="flex h-8 shrink-0 items-center">{item.logoElement}</div>
+            ) : (
+              <Image
+                src={item.logo as string}
+                alt={item.name}
+                height={32}
+                width={32}
+                className="size-8"
+              />
+            )}
             <div className="text-natural-black text-lg font-semibold">
               {item.name}
             </div>
           </div>
 
-          <div className="text-muted-foreground text-base font-medium">
+          <div className="text-muted-foreground text-base font-medium whitespace-pre-line">
             {item.description}
           </div>
         </div>

@@ -33,7 +33,7 @@ export const ComparisonAccordion = ({ cards }: { cards: ComparisonData[] }) => {
                 <div className="flex items-center gap-3">
                   <Logo className="h-5 w-auto lg:scale-125" />
                   <span className="-tracking-sm text-lg leading-4.5 font-medium">
-                    VayuLabs Labs
+                    VayuLabs
                   </span>
                 </div>
                 <div className="flex items-center gap-3">
